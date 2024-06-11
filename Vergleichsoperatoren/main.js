@@ -65,3 +65,7 @@ console.log("Steffen" <= "STEFFEN");
 console.log("------------------");
 
 console.log('Peter' < 'Annabella');
+console.log("------------------");
+
+console.log("42" === 42); // striktes Gleichheitsoperator
+console.log("42" !== 42); // striktes Ungleichheitsoperator
