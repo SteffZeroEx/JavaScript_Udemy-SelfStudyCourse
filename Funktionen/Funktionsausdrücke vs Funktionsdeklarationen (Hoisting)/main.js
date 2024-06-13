@@ -18,7 +18,7 @@ funktion_2 = function () {
 };
 funktion_2();
 
-// Funktionsdeklarationen (werden gehoistet)
+// Funktionsdeklarationen (werden gehoistet) -> bestenfalls auch nie benutzen
 
 function funktion_3() {
     console.log("Funktion 3");
