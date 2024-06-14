@@ -30,36 +30,32 @@ let konto_2 = {
 console.log(konto_2);
 
 
-// Werte auslesen (Bracket-Notation)
+// Werte auslesen (Dot-Notation)
 
-let wert_1 = konto_1["iban"];
+let wert_1 = konto_1.iban;
 console.log(wert_1);
 
-let wert_2 = konto_1["inhaber"]["geschlecht"];
+let wert_2 = konto_2.bic;
 console.log(wert_2);
+
+let wert_3 = konto_1.inhaber.vorname;
+console.log(wert_3);
 
 /* Mini Challenge
     console.log mit template string -> z.B. "Max Mustermann hat 3000€ auf seinem Konto"
 */
 
+console.log(`${konto_1.inhaber.vorname} ${konto_1.inhaber.nachname} hat ${konto_1.kontostand}€ auf seinem Konto.`);
 
+// Eigenschaften setzen (Dot-Notation)
 
-// Eigenschaften setzen (Bracket-Notation)
+konto_1.abhebelimit = 1000;  // "abhebelimit" <- Eigenschaft
+console.log(konto_1);
+console.log(konto_1.abhebelimit);
 
-konto_2["abhebelimit"] = 1000;
-console.log(konto_2["abhebelimit"]);
-
-// Werte setzen bzw. verändern (Bracket-Notation)
-
-konto_1["kontostand"] = 3000;
-console.log(konto_1["kontostand"]);
-
-// Warum sollten wir die Bracket-Notation jemals verwenden?
-
-let eigenschaft = "iban";
-let wert_3 = konto_1[eigenschaft];
-console.log(wert_3);
-
+// Werte setzen bzw. verändern (Dot Notation)
+konto_1.kontostand = 3000;
+console.log(konto_1);
 
 
 /* Abschluss Challenge 
@@ -67,7 +63,6 @@ console.log(wert_3);
     - fügt Eigenschaft PS hinzu
     - verändert das Modell des Autos
     - gebt Template-String "Ein ... ... hat ... PS." aus
-      (einer der Werte soll über einen String in einer Variablen ausgelesen werden)
 */
 
 let auto = {
@@ -88,11 +83,7 @@ let auto = {
 
 console.log(auto);
 
-auto["ps"] = 230;
-auto["modell"] = "Stinger";
-
-let eig = "ps";
-
+auto.ps = 230;
+auto.modell = "Stinger";
 console.log(auto);
-
-console.log(`Ein ${auto["marke"]} ${auto["modell"]} hat ${auto[eig]}PS.`);
+console.log(`Ein ${auto.marke} ${auto.modell} hat ${auto.ps} PS.`);
