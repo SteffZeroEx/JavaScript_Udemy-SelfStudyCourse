@@ -12,6 +12,7 @@ switch (ausruck) {
         break
     default:
         // auszuführender Code
+        break;
 }
 
 /*
