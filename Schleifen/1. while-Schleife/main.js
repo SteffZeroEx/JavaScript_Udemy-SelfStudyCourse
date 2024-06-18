@@ -24,7 +24,7 @@ while (x < 5) {
 // 4 < 5 -> x + 1 dann console.log -> x = 5 (Ausgabe: While: 5)
 // 5 < 5 -> false
 
-console.log("-----------------");
+console.log("");
 
 // Andere Logik:
 
@@ -42,6 +42,7 @@ while (y < 5) {
 // 4 < 5 -> Erst console.log(), dann y + 1 -> y = 4 (Ausgabe: "While: 4")
 // 5 < 5 -> false
 
+console.log("");
 
 // VORSICHT VOR ENDLOSSCHLEIFEN!!!
 
@@ -62,3 +63,18 @@ while (a < 1){
 
 }
 */
+
+
+
+let z = 0;
+
+while (z < 10) {
+    z++;
+    if (z == 5) { // 5 wird übersprungen
+        continue;
+    } else if (z == 7) { // bei 7 wird abgebrochen
+        break;
+    }
+    console.log(z);
+}
+console.log("Schleife beendet!");
