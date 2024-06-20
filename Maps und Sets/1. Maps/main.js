@@ -1,5 +1,8 @@
 'use strict';
 
+    // Objekten ähnlich
+// Maps speichern Eigenschaft-Werte-Paare
+
 let meine_map = new Map();
 
 // variablen_name.set(Eigenschaft, Wert);  -> fügt der Map-Variable eine Eigenschaft und einen Wert hinzu. Dabei spiel es keine Roll, was der Wert ist. Kann eine Number, ein String, ein Boolean, ein Objekt etc sein
