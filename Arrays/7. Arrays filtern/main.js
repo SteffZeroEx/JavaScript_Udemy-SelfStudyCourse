@@ -26,14 +26,14 @@ let zahlen = [12, 23, 34, 77, 2, 32, 9, 55, 43, 11, 1];
 
     // bessere Möglichkeit
 
-let kleinerGleichZwanzig = zahlen.filter(function (e) {  // e = zahlen(Array)
+let kleiner_gleich_zwanzig = zahlen.filter(function (e) {  // e = zahlen(Array)
     if (e <= 20) {
         return true;
     } else {
         return false;
     }
 })
-console.log(kleinerGleichZwanzig);
+console.log(kleiner_gleich_zwanzig);
 
 // Die Methode filter durchläuft alle Elemente des Arrays (hier "zahlen") auf dem sie aufgerufen wurde und 
 //  erzeugt ein neues Array mit denjenigen Elementen des ursprünglichen Arrays, 
