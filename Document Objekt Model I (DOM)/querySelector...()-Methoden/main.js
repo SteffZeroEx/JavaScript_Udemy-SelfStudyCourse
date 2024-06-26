@@ -15,7 +15,7 @@ let qs_4 = document.querySelector("%67§ >");        // Test mit einem "nicht-va
 console.log(qs_4);
 */
 
-    // Elemente mit CSS-Selektor auswählen
+    // Elemente mit CSS-Selektor auswählen          // Gibt und eine Node-list zurück
     
 let qsa_1 = document.querySelectorAll("body > #navigation > ul > li > a");
 console.log(qsa_1);
