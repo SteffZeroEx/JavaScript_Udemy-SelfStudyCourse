@@ -59,3 +59,7 @@ Solltest du jetzt noch Fragen haben oder dir noch immer unsicher sein, ob der Ku
 <li>An jeden, der lernen möchte was "unter der Haube" der meisten modernen Websites passiert</li>
 <li>An jeden, der mit einer weiteren Qualifikation im Lebenslauf glänzen möchte</li>
 </ul>
+
+
+<h4>Link zum entsprechenden Praxisprojekt:</h4>
+<a href="https://github.com/SteffZeroEx/liqui-planner_JavaScript_Udemy-SelfStudyCourse_PracticalWork">>>Praxisprojekt<<</a>
