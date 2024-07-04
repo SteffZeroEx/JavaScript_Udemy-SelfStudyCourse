@@ -32,4 +32,5 @@ console.log(k.kontostand_abfragen());
 // k.abheben = 500;
 // console.log(k.kontostand_abfragen);
 console.log(k);
+kk.abheben(750);
 console.log(kk);
