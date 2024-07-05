@@ -42,4 +42,33 @@ const delete_cookie = function (name) {
 }
 delete_cookie("ein key;value-paare");
 
+// Cookies auslesen
+// password=%25A%24g%5B%5Dhm%3B%C2%A78; mein_alter=32; vorname=Steffen; nachname=Kieske; 10s_cookie=; zahlen=5678
+
+const get_cookie = function (name) {
+  let cookie_array = document.cookie.split(";");
+  // ['password=%25A%24g%5B%5Dhm%3B%C2%A78', ' mein_alter=32', ' vorname=Steffen', ' nachname=Kieske', ' 10s_cookie=', ' zahlen=5678']
+  let regex = new RegExp(`^\\s?${encodeURIComponent(name)}=`);
+  for (let cookie of cookie_array) {
+    if (cookie.match(regex)) {
+        return decodeURIComponent(cookie.replace(regex, ""));
+    }
+  }
+};
+console.log( get_cookie("password"));
+
+// Cookies prüfen
+const has_cookie = function (name) {
+  let cookie_array = document.cookie.split(";");
+  // ['password=%25A%24g%5B%5Dhm%3B%C2%A78', ' mein_alter=32', ' vorname=Steffen', ' nachname=Kieske', ' 10s_cookie=', ' zahlen=5678']
+  let regex = new RegExp(`^\\s?${encodeURIComponent(name)}=`);
+  for (let cookie of cookie_array) {
+    if (cookie.match(regex)) {
+      return true;
+    }
+  }
+  return false;  
+};
+console.log(has_cookie("nachname"));
+
 console.log(document.cookie);
